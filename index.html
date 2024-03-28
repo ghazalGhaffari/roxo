@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <title>roxo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="nav">
+        <div class="nav-top container">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="#" class="nav-item__text">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__text">راه های ارتباط</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__text">درخواست مشاوره</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-item__text">لیست دوره های اشتراک ویژه</a>
+            </li>
+          </ul>
+          <div class="discount">
+            <img
+              src="img/la--smile-wink-solid.svg"
+              alt="smile"
+              class="discount-img"
+            />
+            <a href="#" class="discount-text">تخفیف امروز</a>
+          </div>
+        </div>
+        <div class="nav-buttom container">
+          <div class="nav-buttom__right">
+            <img src="img/roxo-class-logo.png" alt="ROXO" class="logo" />
+            <ul class="menu-items__right">
+              <li class="menu-item">
+                <a href="#" class="menu-item__text">صفحه اصلی</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__text">دوره های آموزشی</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__text">سری های آموزشی</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__text">مقالات</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__text">روکسوکیو</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-item__text">همکاری و کسب درآمد</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-items__left">
+            <div class="search">
+              <button class="search-btn">
+                <img
+                  src="img/la--search.svg"
+                  alt="search"
+                  class="search-btn__icon"
+                />
+              </button>
+              <input type="text" class="search-btn__text" />
+            </div>
+
+            <div class="shop">
+              <img
+                src="img/la--shopping-basket.svg"
+                alt="shop"
+                class="shop-img"
+              />
+            </div>
+            <div class="register">
+              <img
+                src="img/la--user.svg"
+                alt="userLogo"
+                class="register-icon"
+              />
+              <a href="#" class="register-btn"> ورود | ثبت‌نام </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-container">
+        <div class="address">
+          <ul class="address-order">
+            <li class="address-order__title">
+              <a href="#" class="address-order__link">صفحه اصلی</a>
+            </li>
+            <li class="address-order__title">
+              <a href="#" class="address-order__link">مقالات</a>
+            </li>
+            <li class="address-order__title">
+              <a href="#" class="address-order__link"
+                >نصب و آماده سازی Node.js و npm</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <h1 class="course-title">نصب و آماده سازی Node.js و npm</h1>
+
+        <div class="article-info">
+          <div class="user-info">
+            <img
+              src="img/1a1b0d34935b9949d114a98f1721bfc2.png"
+              alt="profile"
+              class="user-image"
+            />
+            <a href="#" class="user-name">امیر زوارمی</a>
+          </div>
+          <div class="date">25 تیر 1398</div>
+        </div>
+
+        <div class="session-title">
+          <img src="img/book.svg" alt="book" class="session-title__img" />
+          <p class="session-title__text">
+            درس 1 از سری <a href="#" class="session-link"> آموزش npm</a>
+          </p>
+        </div>
+
+        <img
+          src="img/001-How-to-work-with-npm-beginners-guide.jpg"
+          alt="how to work with npm"
+          class="course-pic"
+        />
+
+        <p class="explain">
+          با سلام و احترام خدمت شما همراهان گرامی روکسو، در این دوره ی چند قسمتی
+          قصد داریم آموزش کار با npm را به شما آموزش دهیم. این دوره برای افراد
+          تازه در نظر گرفته شده است اما برای کاربران سطح متوسط نیز مفید خواهد
+          بود. توجه داشته باشید که وقتی می گوییم تازه کار منظورمان کسانی است که
+          با npm کار نکرده اند ولی باید دانش کلی در زمینه ی کار با command line
+          و دستورات آن را داشته باشید. در جلسه اول این سری آموزشی، به تشریح
+          مراحل نصب node.js می پردازیم.
+        </p>
+
+        <h2>کار با npm</h2>
+
+        <p class="explain">
+          همانطور که می دانید Node.js به ما اجازه میدهد که برنامه نویسی سمت سرور
+          را با زبان جاوا اسکریپت انجام دهیم و بر اساس
+          <a href="#" class="session-link">V8 JavaScript runtime</a> و در زبان
+          ++C نوشته شده است، به همین خاطر سرعت زیادی دارد. بنابراین هدف اولیه ی
+          Node.js ایجاد محیط سرور برای برنامه ها بود اما به تدریج کاربران از آن
+          برای خودکار سازی عملیات های محلی استفاده کردند. از آن پس ابزارهای
+          بسیاری بر پایه ی Node به وجود آمدند (مانند
+          <a href="#" class="session-link">Grunt</a> و
+          <a href="#" class="session-link">Gulp</a> و
+          <a href="#" class="session-link">Webpack</a> و ...) که باعث تغییر
+          توسعه ی front-end شدند.
+        </p>
+        <p class="explain">
+          برای استفاده از این ابزارها (پکیج ها) در Node.js باید بتوانیم آن ها را
+          به روش بهینه ای نصب و مدیریت کنیم. اینجاست که npm یا node package
+          manager (مدیریت کننده ی پکیج های node) پا به میدان می گذارد.
+        </p>
+
+        <p class="explain-tip">
+          npm پکیج ها را برایتان نصب کرده و اینترفیس مناسبی را برای کار با آن ها
+          فراهم می کند.
+        </p>
+
+        <p class="explain">
+          ما هم در این سری آموزشی می خواهیم با دستورات و روش های پایه ای npm
+          آشنا شویم؛ به طور مثال چطور پکیج ها را در حالت محلی یا سراسری نصب
+          کنیم؟ چطور آن ها را حذف یا به روز رسانی کنیم؟ چطور نسخه ی خاصی از پکیج
+          ها را نصب کنیم؟ فایل package.json چیست و چطور با آن کار کنیم؟
+        </p>
+
+        <p class="explain">
+          npm دارای هزاران پکیج مختلف برای کارهای متخلف است و تمام این پکیج ها
+          را در جایی به نام npm registry جمع آورده کرده است. بنابراین وقتی در
+          طول دوره از رجیستری npm صحبت می کنیم منظور ما جایی است که تمامی پکیج
+          ها در آن قرار داشته و ما برای دریافت یا به روز رسانی و ... به آن جا
+          مراجعه می کنیم. شما می توانید از طریق command line با این رجیستری
+          ارتباط برقرار کنید که در همین دوره در مورد آن صبحت خواهیم کرد.
+        </p>
+        <p class="explain">
+          تعریف دقیق package manager ها اینست که روشی برای اتوماسیون و خودکار
+          سازی پروسه ی نصب، به روز رسانی، پیکربندی و حذف قطعات نرم افزاری (پکیج
+          ها) از یک رجیستری جهانی هستند اما قبل از استفاده از npm باید Node.js
+          را روی سیستم خودمان نصب کنیم.
+        </p>
+        <h2>نصب Node.js</h2>
+        <p class="explain">
+          ابتدا به
+          <a href="#" class="session-link">صفحه ی دانلود Node.js</a> بروید و
+          نسخه ی مناسب خودتان (Windows و Mac و کد های کامپایل شده ی Linux و ...)
+          را دانلود کنید. اگر از Linux استفاده می کنید می توانید با استفاده از
+          package manager و
+          <a href="#" class="session-link"
+            >به روشی که در این صفحه توضیح داده شده است</a
+          >، Node.js را نصب کنید.
+        </p>
+        <p class="explain-tip1">
+          در هنگام نوشتن این مقاله آخرین نسخه ی LTS (کاملا پایدار و پشتیبانی
+          شده) از Node.js نسخه ی v10.15.3 است بنابراین ما هم از آن استفاده می
+          کنیم. اگر در آینده در حال خواندن این مقاله هستید جای نگرانی نیست چرا
+          که تغییرات به روز رسانی ها آنچنان اساسی نیستند که بخواهند تا چند سال
+          آینده روش کار با npm را عوض کنند.
+        </p>
+
+        <p class="explain">
+          ابتدا باید ببینیم کدام نسخه از node و در کجای سیستم ما نصب شده است:
+        </p>
+        <pre class="explain-code">
+ $ which node
+ /usr/bin/node
+ $ node --version
+ v10.15.3</pre
+        >
+        <p class="explain">
+          برای حصول اطمینان از نصب Node بهتر است ویژگی REPL (یک محیط مجازی برای
+          node) را یک بار امتحان کنیم:
+        </p>
+        <pre class="explain-code">
+$ node
+> console.log('Node is running');
+Node is running
+> .help
+.break    Sometimes you get stuck, this gets you out
+.clear    Alias for .break
+.editor   Enter editor mode
+.exit     Exit the repl
+.help     Show repl options
+.load     Load JS from a file into the REPL session
+.save     Save all evaluated commands in this REPL session to a file
+> .exit</pre
+        >
+        <p class="explain">
+          حالا که مطمئن شدیم نصب node موفقیت آمیز بوده است باید به سراغ npm
+          برویم. npm درون Node.js است بنابراین نیاز به نصب جداگانه ندارد:
+        </p>
+        <pre class="explain-code">
+$ which npm
+/usr/bin/npm
+$ npm --version
+6.4.1</pre
+        >
+
+        <h2>به روز رسانی npm</h2>
+        <p class="explain">
+          npm که مدیریت کننده ی پکیج های node است، پروژه ای جداگانه از Node.js
+          بود و این روزها به سرعت به روز رسانی می شود. شما می توانید آخرین نسخه
+          های موجود npm را در این صفحه مشاهده کنید. اگر متوجه شدید که نسخه ی npm
+          شما قدیمی است می توانید از روش زیر آن را به روز رسانی کنید.
+        </p>
+        <p class="explain">
+          کاربران Linux و Mac باید از دستور زیر استفاده کنند:
+        </p>
+        <pre class="explain-code">npm install npm@latest -g</pre>
+        <p class="explain">
+          اما کاربران Windows نباید تحت هیچ شرایطی از دستور بالا استفاده کنند.
+          اگر چنین کاری کنید دیگر نمی توانید npm را به روز رسانی کنید، بلکه باید
+          کل Node.js را حذف کرده و دوباره نصب کنید! برای به روز رسانی صحیح npm
+          در ویندوز چند قدم وجود دارد:
+        </p>
+        <p class="explain">
+          <strong>قدم اول:</strong> PowerShell (همان cmd.exe در ویندوز 10) را به
+          صورت administrator باز کرده و کد زیر را در آن اجرا کنید:
+        </p>
+        <pre class="explain-code">
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force</pre
+        >
+        <p class="explain">
+          این کار باعث می شود که مطمئن شویم شما می توانید در سیستم خود هر
+          اسکریپتی که خواستید را اجرا کنید.
+        </p>
+        <p class="explain">
+          <strong>قدم دوم:</strong> ابزار
+          <a href="#" class="session-link">npm-windows-upgrade</a> را نصب کنید.
+          پس از نصب آن را اجرا کنید تا بتواند npm را برایتان به روز رسانی کند.
+          سپس تمام این کدها را از طریق کنسول PowerShell اجرا کنید:
+        </p>
+        <pre class="explain-code">
+npm install --global --production npm-windows-upgrade
+npm-windows-upgrade --npm-version latest</pre
+        >
+        <p class="explain">
+          اگر می خواهید فقط آخرین نسخه را نصب کنید مستقیما این دستور را وارد
+          کنید:
+        </p>
+        <pre class="explain-code">npm-windows-upgrade --npm-version latest</pre>
+        <p class="explain">
+          برای اطلاعات بیشتر به صفحه ی
+          <a href="#" class="session-link">npm-windows-upgrade</a> مراجعه کنید.
+        </p>
+        <p class="explain">
+          تا این قسمت Node.js را نصب کرده و از سالم بودن آن و npm اطمینان حاصل
+          کردیم. در قسمت های بعدی به سراغ توضیح ماژول ها و نصب پکیج ها می رویم.
+        </p>
+
+        <div class="share">
+          <div class="tags">
+            <p class="tags-title">برچسب ها:</p>
+            <a href="#" class="tags-link">آموزش npm</a>
+            <a href="#" class="tags-link">nodejs</a>
+            <a href="#" class="tags-link">Nodejs</a>
+            <a href="#" class="tags-link">نصب npm</a>
+            <a href="#" class="tags-link">نصب Nodejs</a>
+          </div>
+
+          <div class="social-media">
+            <a href="#" class="social-media__link">
+              <img
+                src="./img/article-twitter.svg"
+                alt="twitter"
+                class="social-media__img"
+              />
+            </a>
+            <a href="#" class="social-media__link">
+              <img
+                src="./img/article-facebook.svg"
+                alt="facebook"
+                class="social-media__img"
+              />
+            </a>
+            <a href="#" class="social-media__link">
+              <img
+                src="./img/article-linkedin.svg"
+                alt="linkdin"
+                class="social-media__img"
+              />
+            </a>
+            <a href="#" class="social-media__link">
+              <img
+                src="./img/article-whatsapp.svg"
+                alt="whatsapp"
+                class="social-media__img"
+              />
+            </a>
+            <a href="#" class="social-media__link">
+              <img
+                src="./img/article-telegram.svg"
+                alt="telegram"
+                class="social-media__img"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="suggested-order">
+          <div class="suggested-order__header">
+            <img src="./img/account.svg" class="order-img" />
+            <p class="order-text">
+              ترتیبی که روکسو برای مطالعه‌ی دروس سری
+              <a href="#" class="session-link">آموزش npm</a> توصیه می‌کند:
+            </p>
+          </div>
+          <div class="suggested-order__steps">
+            <div class="step active">
+              <div class="steps-number">1</div>
+              <p class="steps-title">
+                <a href="#" class="steps-title__link active"
+                  >نصب و آماده سازی Node.js و npm</a
+                >
+              </p>
+            </div>
+            <div class="step">
+              <div class="steps-number">2</div>
+              <p class="steps-title">
+                <a href="#" class="steps-title__link"
+                  >نصب پکیج های npm به صورت محلی و سراسری</a
+                >
+              </p>
+            </div>
+            <div class="step">
+              <div class="steps-number">3</div>
+              <p class="steps-title">
+                <a href="#" class="steps-title__link"
+                  >مدیریت وابستگی ها، حذف، نصب نسخه ای خاص و بروزرسانی پکیج های
+                  npm</a
+                >
+              </p>
+            </div>
+            <div class="step last">
+              <div class="steps-number">4</div>
+              <p class="steps-title">
+                <a href="#" class="steps-title__link"
+                  >جستجو، مدیریت کش، بازنصب وابستگی‌ها و موارد تکمیلی کار با
+                  npm</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img src="./img/roxo-content-creators-banner.jpg" class="banner" />
+
+        <h2>دیدگاه‌های شما</h2>
+
+        <div class="line-wrapper">
+          <div class="wrapper"></div>
+          <span class="wrapper-dot"></span>
+          <span class="wrapper-dot"></span>
+          <span class="wrapper-dot"></span>
+          <span class="wrapper-dot"></span>
+          <span class="wrapper-dot"></span>
+          <span class="wrapper-dot"></span>
+          <span class="wrapper-dot"></span>
+        </div>
+
+        <div class="comments">
+          <button type="button" class="new-comment">افزودن دیدگاه جدید</button>
+        </div>
+      </div>
+    </main>
+
+    <aside class="aside">
+      <h3 class="related-courses">دوره‌های آموزشی مرتبط</h3>
+
+      <div class="line-wrapper__aside">
+        <div class="wrapper-aside"></div>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+      </div>
+
+      <div class="related-courses__course">
+        <img
+          src="./img/JnSGInZrrWN2lnzQfWHa5RbvmTCI823I5OJH4ygH_thumb.jpg"
+          class="related-courses__img"
+        />
+        <div class="related-courses__info">
+          <a href="#" class="related-courses__link"
+            ><i class="las la-play"></i>
+            آموزش Nodejs (نود جی اس) به صورت پروژه محور
+          </a>
+          <span class="related-courses__price">415000 تومان</span>
+        </div>
+      </div>
+
+      <h3 class="related-articles">مقالات مرتبط</h3>
+
+      <div class="line-wrapper__aside">
+        <div class="wrapper-aside"></div>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+      </div>
+
+      <div class="articles">
+        <div class="article">
+          <img
+            src="./img/How-To-Build-a-Discord-Bot-with-Nodejs.jpg"
+            class="article-img"
+          />
+          <div class="article-inf">
+            <a href="#" class="article-link">ساخت ربات Discord با Node.js</a>
+            <div class="article-time">13 بهمن 1400</div>
+          </div>
+        </div>
+        <div class="article">
+          <img
+            src="./img/How-to-Implement-Google-Authentication-in-Nodejs.jpg"
+            class="article-img"
+          />
+          <div class="article-inf">
+            <a href="#" class="article-link"
+              >پیاده‌ سازی احراز هویت گوگل در Node.js</a
+            >
+            <div class="article-time">26 دی 1400</div>
+          </div>
+        </div>
+        <div class="article">
+          <img src="./img/nodejs-interview-questions.jpg" class="article-img" />
+          <div class="article-inf">
+            <a href="#" class="article-link"
+              >سوالات مصاحبه فنی Node js برای استخدام برنامه‌‌نویسان</a
+            >
+            <div class="article-time">06 دی 1400</div>
+          </div>
+        </div>
+        <div class="article">
+          <img src="./img/Copy-of-for-thumbnail.jpg" class="article-img" />
+          <div class="article-inf">
+            <a href="#" class="article-link"
+              >آپلود عکس در Node js و ذخیره در MongoDB</a
+            >
+            <div class="article-time">06 دی 1400</div>
+          </div>
+        </div>
+        <div class="article">
+          <img src="./img/01-Create-CLI-with-NodeJS.jpg" class="article-img" />
+          <div class="article-inf">
+            <a href="#" class="article-link">ساخت یک CLI با Node.js</a>
+            <div class="article-time">16 تیر 1400</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="latest-questions">آخرین سوالات کاربران</h3>
+
+      <div class="line-wrapper__aside">
+        <div class="wrapper-aside"></div>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+      </div>
+
+      <div class="questions">
+        <div class="question">
+          <div class="question-title">
+            <a href="#" class="username">lotfian85</a> در 1 سال قبل پرسیده:
+          </div>
+          <a href="#" class="question-text"
+            >مشکل در استخراج json از آدرس خارجی (External URL)</a
+          >
+        </div>
+        <div class="question">
+          <div class="question-title">
+            <a href="#" class="username">Afshin2700</a> در 2 سال قبل پرسیده:
+          </div>
+          <a href="#" class="question-text"
+            >دسترسی نود جی اس به کدهای ارسالی جاوا اسکریپت</a
+          >
+        </div>
+        <div class="question">
+          <div class="question-title">
+            <a href="#" class="username">james</a> در 2 سال قبل پرسیده:
+          </div>
+          <a href="#" class="question-text">فیلتر محصولات در سایت دیجی‌کالا</a>
+        </div>
+        <div class="question">
+          <div class="question-title">
+            <a href="#" class="username">reza_hosseiny</a> در 2 سال قبل پرسیده:
+          </div>
+          <a href="#" class="question-text">سرعت پخش خروجی زبان c</a>
+        </div>
+        <div class="question">
+          <div class="question-title">
+            <a href="#" class="username">mehran_mehdipour</a> در 3 سال قبل
+            پرسیده:
+          </div>
+          <a href="#" class="question-text"
+            >قراردادن خروجی VueJS CLI کنار فایل های پوشه public لاراول روی
+            سرور</a
+          >
+        </div>
+      </div>
+      <div class="new-question">
+        <a href="#" class="ask-question">تو هم سوالتو بپرس!</a>
+      </div>
+
+      <h3 class="follow-us">ما را دنبال کنید</h3>
+
+      <div class="line-wrapper__aside">
+        <div class="wrapper-aside"></div>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+        <span class="wrapper-dot__aside"></span>
+      </div>
+
+      <div class="follow">
+        <a href="#" class="follow-link">
+          <img src="./img/roxo-instagram.png" class="follow-img" />
+        </a>
+        <a href="#" class="follow-link">
+          <img src="./img/telegram-roxo.png" class="follow-img" />
+        </a>
+        <a href="#" class="follow-link">
+          <img src="./img/roxo-email.png" class="follow-img" />
+        </a>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="footer-top container">
+        <div class="about">
+          <div class="about-right">
+            <div class="about-title">
+              <img
+                src="./img/about-roxo-logo.png"
+                alt="roxo"
+                class="about-roxo__img"
+              />
+              درباره روکسو
+            </div>
+            <p class="about-roxo__text">
+              روکسو یک پلتفرم آموزشی با امکانات گسترده است که با هدف توسعه منابع
+              آموزشی فارسی و ارتقاء سطح دانش ایرانیان ایجاد شده است. این سایت
+              آموزش آنلاین، یک دنیای بدون مرز است و قصد دارد شرایطی را فراهم کند
+              که از یک سو، همه افراد در سراسر ایران به منابع آموزشی دسترسی داشته
+              باشند و از سوی دیگر متخصصان بتوانند در بستری امن و مناسب، از
+              مهارت‌های خود را در اختیار علاقمندان قرار دهند.
+            </p>
+          </div>
+          <div class="about-left">
+            <img src="./img/parsian-logo.jpg" class="about-img" />
+            <img src="./img/nashr-logo.jpg" class="about-img" />
+            <img src="./img/logo-sabt.png" class="about-img" />
+            <img src="./img/logo-etemad.png" class="about-img" />
+          </div>
+        </div>
+
+        <div class="membership">
+          <div class="membership-title">
+            <img src="./img/email.svg" class="membership-img" />
+            <span class="membership-text"
+              >از آخرین مطالب و تخفیف‌های روکسو همیشه با خبر باشید!
+            </span>
+          </div>
+          <div class="membership-inputs">
+            <input
+              type="tel"
+              class="membership-input"
+              placeholder="شماره موبایل"
+            />
+            <input
+              type="email"
+              class="membership-input"
+              placeholder="آدرس ایمیل"
+            />
+            <a href="#" class="membership-btn">عضویت</a>
+          </div>
+        </div>
+
+        <div class="help-links">
+          <div class="help-links__list">
+            <h4 class="list-links__title">خدمات کاربران</h4>
+            <ul class="list-links">
+              <li class="links">
+                <a href="#" class="links-link">حریم خصوصی</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">سوالات متداول</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">مدال‌ها و امتیازات</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">درخواست مشاوره</a>
+              </li>
+            </ul>
+          </div>
+          <div class="help-links__list">
+            <h4 class="list-links__title">راهنمای خرید</h4>
+            <ul class="list-links">
+              <li class="links">
+                <a href="#" class="links-link">چطور خرید کنم؟</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">قوانین و مقررات خرید</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">شیوه‌های پرداخت</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">عضویت ویژه چیست؟</a>
+              </li>
+            </ul>
+          </div>
+          <div class="help-links__list">
+            <h4 class="list-links__title">راهنمای کسب درآمد</h4>
+            <ul class="list-links">
+              <li class="links">
+                <a href="#" class="links-link">چطور مدرس روکسو شوم؟</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">چطور نویسنده روکسو شوم؟</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">قوانین فروش دوره</a>
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">فایل‌های موردنیاز</a>
+              </li>
+            </ul>
+          </div>
+          <div class="help-links__list">
+            <h4 class="list-links__title">راه‌های ارتباط</h4>
+            <ul class="list-links">
+              <li class="links">
+                <a href="#" class="links-link"
+                  >پست الکترونیک: roxoacademy@gmail.com</a
+                >
+              </li>
+              <li class="links">
+                <a href="#" class="links-link">پشتیبانی تلگرام: roxo24@</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-buttom container">
+        <p class="rights">
+          طراحی شده با در ایران عزیز
+          <span class="rights-span"
+            >- کلیه‌ی حقوق نزد آکادمی آنلاین روکسو محفوظ است و هر گونه
+            کپی‌برداری از مطالب، پیگرد قانونی دارد</span
+          >.
+        </p>
+
+        <div class="contact">
+          <img src="./img/telegram.svg" class="contact-img" />
+          <img src="./img/instagram.svg" class="contact-img" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
