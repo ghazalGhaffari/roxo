@@ -377,6 +377,7 @@ footer {
   background-color: #37287b;
   display: flex;
   align-items: center;
+  padding: 0 0.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.6rem;
   border-radius: 0.4rem;
@@ -386,8 +387,7 @@ footer {
   -o-border-radius: 0.4rem;
 }
 .order-img {
-  object-fit: cover;
-  margin: 0.4rem 1rem 0.4rem 0.5rem;
+  transform: scale(0.5);
 }
 .order-text {
   color: #fff;
@@ -408,9 +408,26 @@ footer {
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-bottom: 1px solid #e1e1e1;
+  position: relative;
 }
 
+.vertical-line {
+  width: 30px;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  transform: rotate(90deg);
+  right: 1.6%;
+  bottom: -2%;
+}
+.horizontal-line {
+  width: 90%;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  right: 4%;
+  bottom: 0;
+}
 .steps-number {
   display: flex;
   justify-content: center;
@@ -423,7 +440,7 @@ footer {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  color: #e1e1e1;
+  color: #b2b2b2;
 }
 .active > .steps-number {
   background-color: #37287b;
