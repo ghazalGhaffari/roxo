@@ -238,7 +238,7 @@ body {
   align-items: center;
   padding: 0.5rem 1.5rem;
   display: none;
-  height: 5rem;
+  height: 3rem;
 }
 .nav-left {
   display: flex;
@@ -734,13 +734,13 @@ h3 {
   background-color: #d5d3d3;
 }
 .about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   margin-bottom: 2.5rem;
 }
 .about-right {
-  width: 50%;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 .about-title {
   display: flex;
@@ -763,16 +763,21 @@ h3 {
 .about-left {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   justify-content: end;
   align-content: center;
+  grid-column-start: 7;
+  grid-column-end: 5;
 }
 .about-img {
   background-color: #fff;
-  width: 100%;
+  padding: 0.5rem;
+  width: 90%;
+  transform: scale(0.9);
   box-shadow: 0rem 0.1rem 0.5rem 0px #8d8d8d;
-  aspect-ratio: 1.2;
+  aspect-ratio: 1;
   object-fit: contain;
+  border-radius: 0.4rem;
 }
 .membership {
   margin: 0 8rem;
@@ -897,6 +902,9 @@ h3 {
   .container {
     padding: 0 2rem;
   }
+  .horizontal-line {
+    right: 5%;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -917,6 +925,20 @@ h3 {
   .main {
     width: 100%;
   }
+  .rights {
+    font-size: 0.5rem;
+  }
+  .contact-img {
+    width: 1.2rem;
+  }
+  .about-right {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .about-left {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
 }
 @media (max-width: 768px) {
   .article {
@@ -927,18 +949,17 @@ h3 {
   .article-inf {
     align-items: center;
   }
+  .vertical-line {
+    width: 31px;
+  }
+  .horizontal-line {
+    right: 7%;
+  }
   .question {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .about {
-    flex-wrap: wrap;
-  }
-  .about-right,
-  .about-left {
-    width: 100%;
   }
   .membership {
     margin: 0;
@@ -971,5 +992,8 @@ h3 {
 @media (max-width: 600px) {
   .container {
     padding: 0 1.5rem;
+  }
+  .horizontal-line {
+    right: 5%;
   }
 }
