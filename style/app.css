@@ -988,6 +988,9 @@ h3 {
   .contact-img {
     width: 1.2rem;
   }
+  .membership {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 600px) {
   .container {
@@ -995,5 +998,8 @@ h3 {
   }
   .horizontal-line {
     right: 5%;
+  }
+  .membership-input {
+    width: 100%;
   }
 }
